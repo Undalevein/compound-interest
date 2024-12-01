@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Compound Interest Calculator</title>
+    <link rel="stylesheet" href="interest_calculator.css" />
+    <script src="interest_calculator.js" defer></script>
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>Compound Interest Calculator</h1>
+      </header>
+      <section id="body">
+        <section>
+          <img id="stonks" src="Images/stonks_meme.jpg" alt="" />
+        </section>
+        <p>
+          <strong>Compound interest</strong> are investments you can make. When
+          putting your monney into a principal sum, that amount can accumlate
+          over a specified period of time.
+        </p>
+        <h2 id="headerEquations">Compound Interest Equations</h2>
+        <h3>General Compound Interest</h3>
+        <h3 id="equation1">A = P(1 + r/n)<sup id="exponent">nt</sup></h3>
+        <h3>Continuous Compound Interest</h3>
+        <h3 id="equation2">A = P<i>e</i><sup>rt</sup></h3>
+        <section id="line"></section>
+        <h2 id="headerCalculator">Calculate My Interest!</h2>
+        <span>Principal Amount (P): </span>
+        <input id="principal" />
+        <span>Annual Interest Rate (r): </span>
+        <section id="interestSlider">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            class="slider"
+            id="rate"
+          />
+          <span id="ratePercentage">0.0%</span>
+        </section>
+        <span>Number of Periods (n): </span>
+        <select id="frequency">
+          <option value="Unknown">---</option>
+          <option value="Yearly">Yearly</option>
+          <option value="Quarterly">Quarterly</option>
+          <option value="Monthly">Monthly</option>
+          <option value="Daily">Daily</option>
+          <option value="Continuously">Continuously</option>
+        </select>
+        <span>Time in Years (t): </span>
+        <input id="time" />
+        <span id="totalOutput"
+          ><strong
+            >Total compound interest is <output id="answer">?</output>.</strong
+          ></span
+        >
+      </section>
+      <footer>
+        <p>Copyright 2024 Wesley Ng</p>
+        <a
+          href="https://codesandbox.io/p/sandbox/compount-interest-calculator-8vp34f?layout=%257B%2522sidebarPanel%2522%253A%2522EXPLORER%2522%252C%2522rootPanelGroup%2522%253A%257B%2522direction%2522%253A%2522horizontal%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522id%2522%253A%2522ROOT_LAYOUT%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522cm0y8q8wz00073j6i8hqxp4u1%2522%252C%2522sizes%2522%253A%255B100%255D%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522EDITOR%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522id%2522%253A%2522cm0y8q8wy00033j6ie4kzdkv5%2522%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522SHELLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522id%2522%253A%2522cm0y8q8wz00043j6iowdj0o1f%2522%257D%255D%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522DEVTOOLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522id%2522%253A%2522cm0y8q8wz00063j6imtmgk28f%2522%257D%255D%257D%255D%252C%2522sizes%2522%253A%255B50%252C50%255D%257D%252C%2522tabbedPanels%2522%253A%257B%2522cm0y8q8wy00033j6ie4kzdkv5%2522%253A%257B%2522tabs%2522%253A%255B%257B%2522id%2522%253A%2522cm0y8q8wy00023j6i0posjxl2%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522FILE%2522%252C%2522initialSelections%2522%253A%255B%257B%2522startLineNumber%2522%253A41%252C%2522startColumn%2522%253A43%252C%2522endLineNumber%2522%253A41%252C%2522endColumn%2522%253A43%257D%255D%252C%2522filepath%2522%253A%2522%252Finterest_calculator.js%2522%252C%2522state%2522%253A%2522IDLE%2522%257D%252C%257B%2522id%2522%253A%2522cm0ybuwre00023j6ili2okm01%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522FILE%2522%252C%2522initialSelections%2522%253A%255B%257B%2522startLineNumber%2522%253A10%252C%2522startColumn%2522%253A20%252C%2522endLineNumber%2522%253A10%252C%2522endColumn%2522%253A20%257D%255D%252C%2522filepath%2522%253A%2522%252FREADME.d%2522%252C%2522state%2522%253A%2522IDLE%2522%257D%252C%257B%2522id%2522%253A%2522cm0z1bbed00023j6i5mf0mfbz%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522FILE%2522%252C%2522initialSelections%2522%253A%255B%257B%2522startLineNumber%2522%253A89%252C%2522startColumn%2522%253A15%252C%2522endLineNumber%2522%253A89%252C%2522endColumn%2522%253A15%257D%255D%252C%2522filepath%2522%253A%2522%252Finterest_calculator.css%2522%252C%2522state%2522%253A%2522IDLE%2522%257D%255D%252C%2522id%2522%253A%2522cm0y8q8wy00033j6ie4kzdkv5%2522%252C%2522activeTabId%2522%253A%2522cm0z1bbed00023j6i5mf0mfbz%2522%257D%252C%2522cm0y8q8wz00063j6imtmgk28f%2522%253A%257B%2522id%2522%253A%2522cm0y8q8wz00063j6imtmgk28f%2522%252C%2522activeTabId%2522%253A%2522cm0z2osz7000h3j6ivqvyakki%2522%252C%2522tabs%2522%253A%255B%257B%2522id%2522%253A%2522cm0y8q8wz00053j6i1ghdy1k7%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522UNASSIGNED_PORT%2522%252C%2522port%2522%253A0%257D%252C%257B%2522type%2522%253A%2522SANDBOX_INFO%2522%252C%2522isCloud%2522%253Afalse%252C%2522id%2522%253A%2522cm0z2osz7000h3j6ivqvyakki%2522%252C%2522mode%2522%253A%2522permanent%2522%257D%255D%257D%252C%2522cm0y8q8wz00043j6iowdj0o1f%2522%253A%257B%2522tabs%2522%253A%255B%255D%252C%2522id%2522%253A%2522cm0y8q8wz00043j6iowdj0o1f%2522%257D%257D%252C%2522showDevtools%2522%253Atrue%252C%2522showShells%2522%253Afalse%252C%2522showSidebar%2522%253Atrue%252C%2522sidebarPanelSize%2522%253A15%257D"
+          >Sandbox Link
+        </a>
+      </footer>
+    </article>
+  </body>
+</html>

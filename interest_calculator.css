@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: Lingo;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  font-size: auto;
+  animation: title-move 1s;
+}
+
+@keyframes title-move {
+  0% {
+    translate: 200px;
+  }
+  100% {
+    translate: 0px;
+  }
+}
+
+#stonks {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-radius: 10%;
+  border: 5px;
+  max-width: 100%;
+  height: auto;
+  transition: scale 1s;
+  transition-timing-function: ease-out;
+}
+
+#stonks:hover {
+  scale: 110%;
+}
+
+@font-face {
+  font-family: Lingo;
+  src: url(Lingo.ttf);
+}
+
+#headerEquations {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+#headerCalculator {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+#equation1 {
+  font-family: "Times New Roman", Times, serif;
+  color: maroon;
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+  border-radius: 0%;
+}
+
+#equation2 {
+  font-family: "Times New Roman", Times, serif;
+  color: maroon;
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+  border-radius: 0%;
+}
+
+header {
+  vertical-align: top;
+}
+
+#totalOutput {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+#line {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-top-style: solid;
+  border-size: 5px;
+  border-color: black;
+}
+
+#rateSider {
+  grid-template-rows: auto auto;
+  align-content: space-between;
+}
+
+header,
+footer {
+  background-color: aqua;
+  padding: 5px;
+}
+
+footer {
+  flex-direction: end;
+  grid-template-rows: 50% 50%;
+  border-top-style: solid;
+  border-color: teal;
+}
+
+article {
+  height: 100vh;
+  display: grid;
+  align-content: space-evenly;
+}
+
+#body {
+  background-image: linear-gradient(cyan, white);
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 40% 35%;
+  justify-content: center;
+  gap: 10px;
+  overflow-y: scroll;
+  align-content: space-evenly;
+}
