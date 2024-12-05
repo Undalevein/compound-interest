@@ -2,6 +2,7 @@ const principalInput = document.querySelector("#principal");
 const rateInput = document.querySelector("#rate");
 const frequencyInput = document.querySelector("#frequency");
 const timeInput = document.querySelector("#time");
+const differenceOutput = document.querySelector("#difference");
 const answerOutput = document.querySelector("#answer");
 const percentageOutput = document.querySelector("#ratePercentage");
 
@@ -53,8 +54,12 @@ function updateCompoundInterest() {
 
   // Outputs ? if the frequency selection is still ---.
   if (frequencyInput.value === "Unknown") {
+    differenceOutput.textContent = "?";
     answerOutput.textContent = "?";
   } else {
+    differenceOutput.textContent = (
+      totalInterest - principalInput.value
+    ).toFixed(2);
     answerOutput.textContent = totalInterest.toFixed(2);
   }
 }
