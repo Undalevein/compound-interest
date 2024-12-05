@@ -32,3 +32,4 @@ following variables:
 - Lingo font made by Brenton Wildes.
 
 Run the app [here](https://8vp34f.csb.app/).
+Or here on GitHub Pages [here](https://undalevein.github.io/compound-interest/).
